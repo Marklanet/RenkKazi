@@ -1,0 +1,267 @@
+
+.topbar{
+    width: 100%;
+    display: flex;
+    height: 13vh;
+    flex-direction: column;
+    z-index: 100;
+    position: sticky !important;
+    top: 0px; 
+    background-color:white ;
+  
+  }
+  
+  .topbar>.upss{
+    width: 86%;
+    margin: auto;
+    z-index: 99;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .largescreen a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding: 8px 1.5vw;
+    border-radius: 5px;
+    
+  }
+
+  .largescreen a:hover{
+    color: rgb(69, 160, 234);
+    background-color: #520232;
+ 
+  }
+  
+  .upss>.imgname{
+    width:max-content;
+    display: flex;
+    height: 90%;
+    align-items: center;
+    
+  }
+  .imgname>img{
+    height: 8vh !important;
+    width: 10vh !important;
+    align-self: center;
+    
+  }
+  .imgname>h1{
+    
+    color:#520232;
+    text-align: center;
+    font-size: calc(0.9rem + 1vw);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .upss>.largescreen{
+    width:max-content;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 100% !important;
+  
+  }
+  
+  .largescreen>li{
+    list-style: none;
+    padding: 0;
+    align-self: center;
+    font-size: calc(0.2rem + 1vw);
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-variant: tabular-nums;
+    
+  }
+
+ 
+
+  .upss>.account{
+    width:max-content;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+  }
+  .account>div{
+  color: white;
+  font-weight: 500;
+  height: 4vh;
+  width: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #520232;
+  }
+  .account>span{
+  color: #520232;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  }
+  
+  
+  .upss>.togle{
+  display: none;
+  
+  
+  
+  }
+  .togle>img{
+    cursor: pointer;
+    margin-right: 0vw; 
+    height: 7vh !important ;
+    width:8vh!important;
+    border-radius: 3px;
+    border: 2px solid rgb(77, 165, 223);
+  }
+  
+  .topbar>.downs{
+    display: none;
+    margin-top: 0px;
+  }
+
+  
+  .nodowns{
+    display: none;
+  }
+  
+  .downs a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    
+    .upss>.imgname{
+        width:40%;
+    }
+  
+    .upss>.account{
+       
+        display: none;
+    
+    }
+    .upss>.largescreen{
+        margin-right: 2vw;
+        width: 65%;
+    }
+  
+    .largescreen>h2{
+        font-size: calc(0.4rem + 1vw);
+        margin-left: 0px;
+    }
+   
+  }
+  @media (max-width: 576px) {
+    .topbar{
+height: 11vh;
+
+    }
+    .topbar>.upss{
+      height: 12.4vh;
+      margin-bottom: 0px;
+      width: 100%;
+      
+    }
+    .upss>.imgname{
+        width:55%;
+    }
+    .upss>.largescreen{
+        display: none;
+    }
+    .upss>.togle{
+      margin-left: 1vw;
+      margin-right: 2vw;
+  
+        display: unset;
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+        
+    }
+    .topbar>.downs{
+      z-index: 50;
+      display: unset;
+      background-color: #520232;
+      height: max-content; 
+      animation: topbarshow 0.4s ease-in-out forwards; 
+    }
+    .downs>li{
+      list-style: none;
+      margin-left: 5vw;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      font-size: calc(1rem + 1vw);
+      text-align: center;
+    }
+  
+    @keyframes topbarshow {
+        0% {
+          transform: translateY(-100%); 
+          opacity: 0;  
+          
+        }
+        100% {
+          transform: translateY(0%); 
+          opacity: 1;         
+        
+        }
+      }
+      
+    .topbar>.downs>h2{
+        margin-left: 4vw;
+        
+    }
+  
+   
+    .imgname>h1{
+    
+      font-size: calc(1.1rem + 1vw);
+    
+      
+    }
+  
+  
+  }
+  @media (max-width: 480px) {
+    .upss>.imgname{
+      width:max-content;
+  }
+
+  .imgname>h1{
+    
+    font-size: calc(1.3rem + 1vw);
+  
+    
+  }
+  .imgname>img{
+    height: 7vh !important;
+    width: 9vh !important;
+   
+}
+   
+    .togle>img{
+       
+        cursor: pointer;
+        height: 5vh !important ;
+        width:5.5vh!important;
+        
+    }
+    
+  }

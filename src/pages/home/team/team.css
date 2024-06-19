@@ -1,0 +1,101 @@
+.team .box {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid rgb(62 28 131 / 10%);
+  transition: 0.5s;
+  padding: 0;
+  margin: 0;
+  min-width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.team .box:hover {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  cursor: pointer;
+}
+.team .details {
+  text-align: center;
+  margin-top: 30px;
+  width: 100%;
+}
+.team .img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  position: relative;
+}
+.team img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.team .img i {
+  color: #108be7;
+  font-size: 17px;
+  position: absolute;
+  top: 35px;
+  right: -10px;
+}
+.team .img::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #edf0f5;
+  border-radius: 50%;
+}
+.team label {
+  display: inline-block;
+  margin-top: 20px;
+}
+.team i {
+  color: grey;
+  margin-right: 5px;
+}
+.team ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-around;
+  padding: 0;
+  
+  
+}
+.team ul li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  align-items: center;
+  background-color: #f4f5f7;
+  border-radius: 50%;
+  margin: 5px;
+}
+.team .button {
+  font-weight: 500 !important;
+  color: red;
+  margin: 3vh 3vh;  
+}
+.team .button i {
+  color: white;
+  font-size: 20px;
+}
+.team .btn3{
+  margin: 3vh 3vh;
+  text-align: center;
+  margin: 2vh 0;
+
+  
+}
+
+@media screen and (max-width: 480px) {
+
+.team .box {
+  
+  min-width: 70vw;
+  
+}}

@@ -1,0 +1,171 @@
+.flashdeals{
+    height: max-content;
+}
+
+.flashdeals .slider{
+    height: max-content;
+    margin: auto;
+    position: relative;
+    width: 90vw;
+    place-items: center;
+    overflow: hidden;
+       
+}
+
+
+  .flashdeals .location{
+  
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #520232;
+    margin-bottom: 2vh;
+   
+  }
+  .flashdeals .locicon{
+    margin-left: -2px;
+  }
+  .flashdeals .button {
+    border-top: 1.5px solid white;
+    
+    width: 100%;
+    padding: 1vh 2vw;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  
+  .flashdeals .button span
+  {
+    font-size: calc(0.5rem +1vw);
+  }
+
+
+.flashdeals .slide-track{
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    
+}
+
+.flashdeals .slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-24.5vw  * 6));
+    }
+}
+.flashdeals .slide{
+    
+    width: 22.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1vw;
+    perspective: 100px;
+    border-radius: 5px;
+   
+}
+
+
+.flashdeals img{
+    width: 95%;
+    border-radius: 6px;
+    transition: transform 1s;
+    position: relative;
+  
+}
+
+.flashdeals img:hover{
+    transform: translateZ(5px);
+    border-radius: 10px;
+}
+.flashdeals .btnflash{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(77, 165, 223);
+    color: black;
+    font-weight: bold;
+}
+
+.flashdeals .text{
+    padding: 2vw;
+    position: absolute;
+  }
+
+.flashdeals .headss{
+    padding: 4vh 0;
+    text-align: center;
+    color : #520232;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .flashdeals .slide{
+        width: 30vw;
+        
+        margin: 1.5vw;
+        
+    }
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-31.5 * 6));
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .flashdeals .slide{
+        width: 45vw;
+        margin: 2vw;
+    }
+    .flashdeals .dark{
+        text-align: center;
+    }
+    .flashdeals .locicon{
+        display: none;
+      }
+    
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-47vw * 6));
+        }
+    }
+    .flashdeals .button 
+    {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+    
+    }
+    
+
+    .flashdeals p {
+        font-size: 12px;
+      }
+      .flashdeals h4 {
+        font-size: 13px;
+      }
+      .flashdeals .button span
+    {
+      font-size: 10px !important;
+      margin-bottom: 1vh;
+    }
+    
+}

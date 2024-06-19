@@ -1,0 +1,67 @@
+.helpyou{
+    width: 90%;
+    margin: auto;
+    height: max-content;
+    
+}
+.helpyou h1{
+   text-align: center;
+   padding: 4vh 0;
+   font-size: calc(1.6rem + 1vh);
+   color: #520232;
+    
+}
+.helpyou .helpdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.helpyou .helpdiv .ite {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    margin-bottom: 5vh;
+    flex-direction: column;
+    align-items: center;
+}
+.helpyou .helpdiv .ite span{
+   font-size: calc(1rem + 0.4vw);
+   font-weight: bold;
+   margin-bottom: 2vh;
+}
+.helpyou .helpdiv .ite img{
+    height: 50%;
+    width: 20vh;
+}
+.helpyou .helpdiv .ite button{
+   padding: 10px 16px;
+   margin: 2vh 0;
+   border: none;
+   border-radius: 5px;
+   background:  rgba(41, 131, 191, 0.9);
+   font-weight: bold;
+   font-size: 1rem;
+}
+
+.helpyou .helpdiv .ite button:hover{
+    background-color: #520232;
+    color: #fff;
+    padding: 9px 16px;
+ }
+
+
+.helpyou .helpdiv .ite p{
+    
+     text-align: center;
+     
+ }
+ 
+ @media screen and (max-width: 576px) {
+    .helpyou .helpdiv .ite {
+       
+        width: 100%;
+        
+    }
+ }

@@ -1,0 +1,133 @@
+
+  .about .flexi {
+    width: 86%;
+    margin: auto;
+  }
+  .about .moreabout {
+    width: 86%;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    animation: mrabt 0.5s ease-in-out ; 
+  }
+
+  @keyframes mrabt {
+    0% {
+      transform: translateX(-100%); 
+      opacity: 0;  
+      
+    }
+    100% {
+      transform: translateX(0%); 
+      opacity: 1;         
+    
+    }
+  }
+
+  .about .moreabout h2{
+    color:   #520232 ;
+    margin-bottom: 2vh;
+  }
+  .about .full{
+  
+    color: rgb(77, 165, 223) !important;
+  }
+
+  .about .moreabout .cont{
+   margin-top: 5vh;
+  }
+  .about .heading {
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about .heading h1 {
+    text-align: left !important;  
+  }
+  .about .heading p {
+    text-align: left !important;  
+  }
+  .about p {
+    font-size: 15px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+  .about .left{
+    flex: 1;
+  }
+
+  .about .right{
+    flex: 1;
+  }
+  .about .right img{
+    width: 100%;
+    height: 80%;
+  }
+  .about .dy{
+   width: 65%;
+  }
+
+.about .dx{
+  width: 30%;
+}
+.about .aboutimg{
+  width: 20vh;
+  height: 20vh;
+  margin-right: 5vh;
+}
+
+.about .btn2:hover{
+  background-color: #520232;
+  color: #fff;
+}
+  @media screen and (max-width: 768px) {
+    .about .flexi {
+    flex-direction: column;
+    }
+    .about p {
+     padding: 0;
+    }
+    .about .container img {
+      margin-top: 50px;
+    }
+    .about .dy .cont{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .about .dy .cont2{
+      display: flex;
+      flex-direction: column-reverse;   
+    }
+    .about .aboutimg{
+      width: 20vh;
+      height: 20vh;
+      margin-left: 0vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+  .about .moreabout{
+  flex-direction: column;
+}
+
+.about .dy{
+   width: 100%;
+}
+   
+.about .dx{
+width: 100%;
+}
+
+.about   .aboutimg{
+  width: 18vh;
+  height: 18vh;
+  margin-left: 0vh;
+}
+
+}
+ 
+  

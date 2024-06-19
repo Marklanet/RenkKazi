@@ -1,0 +1,164 @@
+.screen {
+    background-image: url("../../../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    height: max-content ;
+    width: 100%;
+  }
+  .screen .container {
+    padding-top: 8%;
+    height: max-content;
+  }
+  
+  .screen .heading>div>h1{
+    color: white !important;
+    font-size: calc(2.5rem + 1vw);
+    white-space: initial;
+ 
+   }
+   .screen .heading>div>p{
+    text-align: center;
+    color: rgb(130, 180, 233);
+    opacity: 0.8;
+    margin-bottom: 2vh;
+    margin-top: 1px;
+    font-size: calc(0.4rem + 1vw);
+  }
+  form {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10vh;
+    margin-bottom: 5vh; 
+  }
+  
+  form select {
+    padding: 10px;
+    width: 100% ;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 5px;
+    border-radius: 5px;
+    /*background-color: rgb(130, 180, 233);*/
+  }
+  form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  form span {
+    font-size: 14px;
+    color: #520232;
+  }  
+  .flexbox2 .box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 15px;
+  }
+
+  .flexbox2 .lastbx{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  
+  form h4{
+    color: #520232;
+  }
+
+  form .box:nth-child(1) {
+    border-left: none;
+  }
+  
+  .flexbox2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15vh;
+    flex-wrap: wrap;
+  }
+
+  .flexbox2 .box{
+    flex: 1;
+    min-width: 15vw;
+  }
+
+  .flexbox2 .lastbx{
+    flex: 0.7;
+    min-width: 10vw;
+  }
+  .lastbx br{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .screen .btn1{
+      padding: 8px 16px;
+      margin-bottom: 0px !important;
+    }
+    .lastbx br{
+      display: unset;
+    }
+
+    .flexbox2 .box{
+      flex: 1;
+      min-width: 25vw;
+      border: none;
+    }
+    .flexbox2 .lastbx{
+      flex: 0.45;
+      border: none;
+      align-items: flex-end;
+    }
+  
+  }
+
+  @media screen and (max-width: 576px) {
+
+    .flexbox2 .box{
+      flex: 1;
+      min-width: 40vw;
+    }
+    form select {
+      
+      background-color: rgb(130, 180, 233);
+    }
+    form input {
+      background-color: rgb(130, 180, 233)
+    }
+
+    .flexbox2 .lastbx{
+      flex: 1;
+      min-width: 10vw;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .screen .btn1{
+      padding: 12px 20px;
+    
+    }
+
+    .flexbox2 .box{
+      flex: 1;
+      min-width: 70vw;
+    }
+
+    .flexbox2 .lastbx{
+      flex: 1;
+      min-width: 30vw;
+      align-items: center;
+    }
+  
+  }
